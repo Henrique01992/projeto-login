@@ -29,7 +29,6 @@ section#login {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
       overflow: hidden;
 
       background-color: white;
@@ -38,6 +37,7 @@ section#login {
       border-radius: 20px;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
 
+      transform: translate(-50%, -50%);
       transition: width 0.3s, height 0.3s;
       transition-timing-function: ease;
      
@@ -57,8 +57,6 @@ section#login > div#formulario {
       display: block;
       padding: 10px;
       
-      
-
 }
 
 div#formulario > h1 {
@@ -69,19 +67,47 @@ div#formulario > h1 {
 
 div#formulario > p {
       font-size: 0.9em;
+      margin: 10px 0px;
 }
 
 form > div.campo {
       background-color: #5f2c82;
+      border: 2px solid #5f2c82 ;
       width: 100%;
       display: block;
       height: 40px;
-      border-radius: 5px;
-      margin: 5px 0px;
+      border-radius: 3px;
+      margin: 5px 3px 1px 3px ;
 }
 
 div.campo > label {
       display: none;
+}
+
+div.campo > i {
+      color: white;
+      font-size: 2em;
+      width: 40px;
+      padding: 5px;
+}
+
+div.campo > input {
+      background-color: #85e5e2;
+      font-size: 1em;
+      width: calc(100% - 65px) ;
+      height: 70%;
+      border: 0px;
+      border-radius: 8px;
+      padding: 4px;
+      transform: translateY(-9.5px);
+}
+
+div.campo > input:focus-within {
+      background-color: white;
+}
+
+div.campo > input:hover {
+      cursor: pointer;
 }
 
 form > input[type=submit] {
